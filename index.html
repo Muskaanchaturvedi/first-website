@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskaan Adventures</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(images/4.jpg) no-repeat center center fixed;
+            height: 100%;
+            background-size: cover;
+            overflow: hidden;
+
+        }
+
+        .left {
+            
+            color: silver;
+            display: inline-block;
+            width: 150px;
+            position: absolute;
+            left: 34px;
+            top: 18px;
+        }
+
+        .mid {
+            border: 4px solid yellow;
+            background-color: violet;
+            color: thistle;
+            display: block;
+            width: 800px;
+            margin: 18px auto;
+        }
+
+        .right {
+            
+            color: silver;
+            display: inline-block;
+            width: 250px;
+            position: absolute;
+            right: 34px;
+            top: 18px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            size: 25px;
+        }
+
+        .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+
+        }
+
+        .navbar li a .active,
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 60px;
+            margin: auto;
+            display: block;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 25px;
+            color: whitesmoke;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            padding: 5px;
+            border-radius: 4px;
+            background-color: orange;
+            color: black;
+            box-sizing: border-box;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: cadetblue;
+        }
+
+        .container {
+            border: solid 4px white;
+            margin: 33px 800px;
+            padding: 40px;
+            width: 35%;
+            border-radius: 4px;
+            
+
+        }
+
+        .container h1 {
+            color: yellowgreen;
+        }
+
+        .formgroup input {
+
+
+
+
+            display: block;
+            margin: 1px auto;
+            padding: 5px;
+
+            width: 202px;
+            font-size: 14px;
+            font-family: sans-serif
+        }
+
+        .formgroup {
+
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="images/logo3.jpg" alt="">
+            <div>Muskaan Adventures</div>
+        </div>
+        <!-- mid box for navbar -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">ADVENTURES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+
+        <div class="right">
+            <button class="btn">CALL US</button>
+            <button class="btn">EMAIL US</button>
+        </div>
+
+
+    </header>
+    <div class="container">
+        <h1>BEST DEALS FOR YOUR ADVENTURE WITH MUSKAAN ADVENTURES</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <label for="name">
+                    NAME: <input type="text" id="name" placeholder="enter your name">
+                </label>
+            </div>
+            <div class="formgroup">
+                <label for="age">
+                    AGE: <input type="text" id="age" placeholder="enter your age">
+                </label>
+            </div>
+            <div class="formgroup">
+                <label for="phone">
+                    CONTACT NO.- <input type="text" id="phone" placeholder="enter your contact no.">
+                </label>
+            </div>
+            <div class="formgroup">
+                <label for="locality">
+                    LOCALITY:<input type="text" id="locality" placeholder="enter your locality">
+                </label>
+            </div>
+            <div class="formgroup">
+
+                <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</body>
+
+</html>
